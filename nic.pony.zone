@@ -1,0 +1,11 @@
+$TTL 90
+@   IN SOA a.ns.pony. nic.pony. (
+        2025020101  ; Serial
+        3600        ; Refresh
+        1800        ; Retry
+        604800      ; Expire
+        3600 )      ; Minimum TTL
+
+    IN NS a.ns.pony.
+    IN NS b.ns.pony.
+    IN A 128.254.225.60

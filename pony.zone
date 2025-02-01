@@ -1,0 +1,29 @@
+; BIND zone file for pony TLD
+; Domain: .pony;
+
+$TTL    172800
+
+$ORIGIN pony.
+
+pony.    IN    SOA    ns1.pony. noc.nic.pony. (
+    2025020101    ; Serial
+    1800          ; Refresh (30 minutes)
+    900           ; Retry (15 minutes)
+    604800        ; Expire (1 week)
+    900           ; Negative Cache TTL (15 minutes)
+)
+
+;; Root Domain Name Servers
+
+pony.    3600    IN    NS    ns.saddle.network.
+pony.    3600    IN    NS    nl.ns.saddle.network.
+
+;; Name Servers
+
+a.ns.pony.    3600    IN    A    128.254.224.1
+b.ns.pony.    3600    IN    A    193.176.244.161
+
+;; Domains
+
+nic.pony.    3600    IN    NS    a.ns.pony.
+nic.pony.    3600    IN    NS    b.ns.pony.
