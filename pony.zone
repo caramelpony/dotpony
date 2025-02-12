@@ -6,7 +6,7 @@ $TTL    172800
 $ORIGIN pony.
 
 pony.    IN    SOA    ns1.pony. noc.nic.pony. (
-    2025020101    ; Serial
+    2025021201    ; Serial
     1800          ; Refresh (30 minutes)
     900           ; Retry (15 minutes)
     604800        ; Expire (1 week)
