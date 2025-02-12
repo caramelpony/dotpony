@@ -27,3 +27,9 @@ b.ns.pony.    3600    IN    A    193.176.244.161
 
 nic.pony.    3600    IN    NS    a.ns.pony.
 nic.pony.    3600    IN    NS    b.ns.pony.
+
+hypno.pony.    3600    IN    NS    ns.saddle.network.
+hypno.pony.    3600    IN    NS    us.ns.saddle.network.
+
+tf.pony.    3600    IN    NS    ns.saddle.network.
+tf.pony.    3600    IN    NS    us.ns.saddle.network.
